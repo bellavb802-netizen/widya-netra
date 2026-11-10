@@ -1,0 +1,53 @@
+{
+  "name": "Buku",
+  "type": "object",
+  "properties": {
+    "judul": {
+      "type": "string"
+    },
+    "penulis": {
+      "type": "string"
+    },
+    "penerbit": {
+      "type": "string"
+    },
+    "tahun_terbit": {
+      "type": "number"
+    },
+    "kode_ddc": {
+      "type": "string"
+    },
+    "isbn": {
+      "type": "string"
+    },
+    "kategori": {
+      "type": "string"
+    },
+    "bidang_id": {
+      "type": "string"
+    },
+    "jumlah": {
+      "type": "number",
+      "default": 1
+    },
+    "tersedia": {
+      "type": "number",
+      "default": 1
+    },
+    "lokasi": {
+      "type": "string"
+    },
+    "cover_url": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "judul"
+  ]
+}

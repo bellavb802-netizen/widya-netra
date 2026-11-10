@@ -1,0 +1,46 @@
+{
+  "name": "Peminjaman",
+  "type": "object",
+  "properties": {
+    "anggota_id": {
+      "type": "string"
+    },
+    "anggota_nama": {
+      "type": "string"
+    },
+    "buku_id": {
+      "type": "string"
+    },
+    "buku_judul": {
+      "type": "string"
+    },
+    "tanggal_pinjam": {
+      "type": "string",
+      "format": "date"
+    },
+    "tanggal_kembali_rencana": {
+      "type": "string",
+      "format": "date"
+    },
+    "tanggal_kembali_aktual": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "dipinjam",
+        "dikembalikan",
+        "terlambat"
+      ],
+      "default": "dipinjam"
+    },
+    "catatan": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "anggota_id",
+    "buku_id"
+  ]
+}

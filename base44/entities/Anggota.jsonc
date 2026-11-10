@@ -1,0 +1,67 @@
+{
+  "name": "Anggota",
+  "type": "object",
+  "properties": {
+    "nama": {
+      "type": "string"
+    },
+    "nip": {
+      "type": "string"
+    },
+    "bidang_id": {
+      "type": "string"
+    },
+    "jabatan": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "no_telp": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "tanggal_daftar": {
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "aktif",
+        "nonaktif"
+      ],
+      "default": "aktif"
+    },
+    "foto_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nama"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

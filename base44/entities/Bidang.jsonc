@@ -1,0 +1,21 @@
+{
+  "name": "Bidang",
+  "type": "object",
+  "properties": {
+    "nama": {
+      "type": "string"
+    },
+    "kode": {
+      "type": "string"
+    },
+    "kepala": {
+      "type": "string"
+    },
+    "deskripsi": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nama"
+  ]
+}

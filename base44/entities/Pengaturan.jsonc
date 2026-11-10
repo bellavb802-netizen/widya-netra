@@ -1,0 +1,36 @@
+{
+  "name": "Pengaturan",
+  "type": "object",
+  "properties": {
+    "nama_instansi": {
+      "type": "string",
+      "default": "Dinas Komunikasi dan Informatika Kabupaten Banyumas"
+    },
+    "nama_aplikasi": {
+      "type": "string",
+      "default": "Widya Netra"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "no_telp": {
+      "type": "string"
+    },
+    "kepala_perpustakaan": {
+      "type": "string"
+    },
+    "nip_kepala": {
+      "type": "string"
+    },
+    "logo_url": {
+      "type": "string"
+    },
+    "denda_per_hari": {
+      "type": "number",
+      "default": 1000
+    }
+  }
+}
